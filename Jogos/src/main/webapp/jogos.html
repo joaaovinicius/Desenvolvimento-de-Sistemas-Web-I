@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Jogos</title>
+        <meta charset="utf-8"/>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    	
+    </head>
+    <body>
+        <h1>JOGOS</h1>
+        <div id="loading" style="display: none;"></div>
+		
+		<div id="conteudo">
+        
+        <button onclick="novo()"><i class="fas fa-plus"></i> Novo</button>
+        <div id="formulario" style="display: none;">
+            <label>
+                NOME DO JOGO: <input type="text" id="nome"/>
+            </label><br/>
+            <label>
+               PLATAFORMA: <input type="text" id="plataforma"/>
+            </label><br/>
+            <label>
+                LANÇAMENTO: <input type="text" id="lancamento"/>
+            </label><br/>
+            <label>
+               MODO ONLINE? <input type="text" id="modoonline"/>
+            </label><br/>
+            <label>
+                QUANTIDADE DE JOGADORES:<input type="text" id="quantidadejogadores"/>
+            </label><br/>
+            <button onclick="salvar()" class="botao-acao"><i class="fas fa-check"></i></button>
+			<button onclick="cancelar()" class="botao-acao"><i class="fas fa-times"></i></button>
+
+
+        </div>
+        <div id="lista">
+            <table border="1" width="100%">
+                <thead>
+                    <th>ID</th>
+                    <th>NOME DO JOGO</th>
+                    <th>PLATAFORMA</th>
+                    <th>LANÇAMENTO</th>
+                    <th>MODO ONLINE</th>
+                    <th>QUANTIDADE DE JOGADORES</th>
+                    <th>AÇÃO</th>
+                   
+                </thead>
+                <tbody id="dados"></tbody>
+            </table>
+        </div>
+       </div>
+        
+        <script src="crud.js"></script>
+    </body>
+</html>
